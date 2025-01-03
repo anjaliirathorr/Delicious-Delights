@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>introduction to bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <style>
+    
+        body {
+            background-color: rgba(255, 219, 134, 0.814); /* Alpha set to 0.2 for extra transparency */
+        }
+
+        .col-md-12 {
+            border: 1px solid rgb(255, 255, 255); /* Add 'solid' for border style */
+            height: 850px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+
+        .header {
+            background-color:rgba(161, 118, 19, 0.773);
+            padding: 20px;
+            color: rgb(35, 14, 222);
+            text-align: left;
+        }
+
+        .header a {
+            color: #553b02d6;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-image {
+            background-image: url('https://images.pexels.com/photos/15279711/pexels-photo-15279711.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 219, 134, 0.814);
+            font-size: 40px;
+        }
+
+        .hero-image h1 {
+            font-family: 'Algerian', sans-serif; /* Use Algerian font */
+            font-weight: bold; /* Ensures bold text */
+            font-size: 50px; /* Adjusted font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+        }
+
+        .order-now-section {
+            background-color: rgba(161, 118, 19, 0.773); /* not working */
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px auto; /* Centers the section horizontally */
+            width: 60%; /* Set the width as needed */
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.927);
+        }
+
+        .order-now-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(96, 73, 4);
+            font-size: 30px;
+            font-weight: 800; /* Very bold weight */
+            letter-spacing: 1px;
+        }
+
+
+        .order-now-section p {
+            font-size: 16px;
+            color: #e0d067; /*order now ke neeche vala text*/
+        }
+
+        .btn {
+            background-color: #e0d067 !important; /* Forces this color to apply */
+            color: #5b4402 !important;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .btn:hover {
+            background-color: #05c53c; /*not working*/
+        }
+
+        .menu-category {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(161, 118, 19, 0.773); 
+            border: 2px solid #4f3a04b3; 
+            margin: 10px; 
+        }
+
+        .menu-category h2 {
+            font-size: 28px; 
+            color: #6f4d03bd; 
+            margin-bottom: 20px;
+        }
+
+        .menu-category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-category li {
+            margin-bottom: 15px; 
+        }
+
+        .menu-category h3 {
+            font-size: 20px; 
+            color: #f2ca18bd; 
+            font-weight: bold; 
+        }
+
+        .menu-category p {
+            font-size: 16px; 
+            color: #ffffff; 
+        }
+
+        .menu-category span {
+            display: block;
+            font-size: 18px; /* Larger font size for price */
+            font-weight: bold;
+            margin-top: 10px;
+            color: #6f4d03bd; /* Green color for price */
+        }
+
+
+        .visit-us-section {
+            background-color: #cc0e0e; /* not working */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #ece7e1 !important; /* not working */
+        }
+
+        p {
+            color: #ffffff; /* not working */
+        }
+
+        .footer {
+            background-color: #6f4d03bd;
+            padding: 20px;
+            color: rgb(255, 255, 255);/*not working*/
+            text-align: center;
+        }
+
+        .footer a {
+            color: rgb(255, 255, 255); /*not working*/
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Home</a> 
+        <!-- # provides clickable links -->
+        <a href="#">Menu</a>
+        <a href="#">Login</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="hero-image">
+        <h1>DELICIOUS DELIGHTS: THIS KITCHEN IS SEASONED WITH LOVE</h1>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/6205798/pexels-photo-6205798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Burger Image">
+                <div class="overlay">
+                    Happiness between two Buns!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/15656541/pexels-photo-15656541/free-photo-of-french-fries-with-ketchup.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Fries Image">
+                <div class="overlay">
+                    Exercise?...... I thought you said Extra Fries!
+                </div>
+            </div>
+            <div class="col-md-4"> 
+                <img src="https://images.pexels.com/photos/12622975/pexels-photo-12622975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Noodles Image">
+                <div class="overlay">
+                    Noodles never tasted so Good!
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-4"> 
+                <img src="https://images.pexels.com/photos/28617328/pexels-photo-28617328/free-photo-of-delicious-creamy-pasta-dish-with-chives.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Pasta Image">
+                <div class="overlay">
+                    Life is all about exploring Pasta-Bilities!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/27244303/pexels-photo-27244303/free-photo-of-carne-asada-nachos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Nachos Image">
+                <div class="overlay">
+                    Crisp outside and soft inside!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/27927612/pexels-photo-27927612/free-photo-of-a-pizza-with-cheese-and-pepperoni-being-pulled-off-of-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Pizza Image">
+                <div class="overlay">
+                    A slice a day keeps the sadness away!
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/3911225/pexels-photo-3911225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Mom Image">
+                <div class="overlay">
+                    I love MOMOries!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/8992923/pexels-photo-8992923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Chutney Image">
+                <div class="overlay">
+                    Mera chutney kidhar hai?
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" style="width: 100%; height: 300px; object-fit: cover;" alt="Potatoes Image">
+                <div class="overlay">
+                    Wanna have some potatoes wrapped in love?
+                </div>
+            </div>
+        </div>
+    </div>          
+
+    <section class="order-now-section">
+        <div class="container">
+            <h2>Order Now</h2>
+            <p>Place your order and enjoy delicious food delivered to your doorstep.</p>
+            <a href="https://example.com/order" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <section class="order-images">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/6954065/pexels-photo-6954065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg" class="img-size">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/7937490/pexels-photo-7937490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-size">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/18908094/pexels-photo-18908094/free-photo-of-pile-on-pancakes-with-sugar-powder-chocolate-and-fruits.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-size">
+            </div>
+        </div>
+    </section>  
+    
+    <main>
+        <section class="menu">
+            <div class="container">
+                <div class="row menu-categories">
+                    <!-- Appetizers Category -->
+                    <div class="menu-category col-md-4">
+                        <h2>Appetizers</h2>
+                        <ul>
+                            <li>
+                                <h3>French Fries</h3>
+                                <p>Cheezy fries <br> Peri peri cheezy fries</p>
+                                <span>Rs 210</span>
+                            </li>
+                            <li>
+                                <h3>Burger</h3>
+                                <p>Sliders <br> Big Bang Theory <br> Game of Thrones</p>
+                                <span>Rs 180</span>
+                            </li>
+                            <li>
+                                <h3>Momos</h3>
+                                <p>Steamed momos <br> Devil gravy momos</p>
+                                <span>Rs 200</span>
+                            </li>
+                            <li>
+                                <h3>Pasta</h3>
+                                <p>White sauce pasta <br> Mac and cheese pasta <br> Red sauce pasta</p>
+                                <span>Rs 180</span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Beverages Category -->
+                    <div class="menu-category col-md-4">
+                        <h2>Beverages</h2>
+                        <ul>
+                            <li>
+                                <h3>Ice Tea</h3>
+                                <p>Peach Ice Tea <br> Ocean Blue</p>
+                                <span>Rs 199</span>
+                            </li>
+                            <li>
+                                <h3>Coolers</h3>
+                                <span>Rs 180</span>
+                            </li>
+                            <li>
+                                <h3>Coffee & Shakes</h3>
+                                <p>Butterscotch shake <br> Chocolate shake <br> Cold coffee <br> Cappuccino</p>
+                                <span>Rs 210</span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Desserts Category -->
+                    <div class="menu-category col-md-4">
+                        <h2>Desserts</h2>
+                        <ul>
+                            <li>
+                                <h3>Waffle</h3>
+                                <p>Choco waffle <br> Nutella waffle</p>
+                                <span>Rs 250</span>
+                            </li>
+                            <li>
+                                <h3>Ice Creams</h3>
+                                <p>Chocolate ice cream <br> Vanilla ice cream</p>
+                                <span>Rs 120</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p>1234 Food Street, Cityville, Country</p>
+                    <p>Phone: +1 123-456-7890</p>
+                    <p>Email: seasonedkitchen@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Saturday: 11:00 AM - 10:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
